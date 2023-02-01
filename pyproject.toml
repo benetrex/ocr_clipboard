@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ocr clipboard"
+version = "0.1.0"
+description = "Takes a screenshot by clicking on two points, evaluates the text from the screenshot and copies it to the clipboard"
+authors = ["Benedikt Treckmann <benedikt.treckmann@cancom.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+pytesseract = "^0.3.10"
+pyautogui = "^0.9.53"
+pynput = "^1.7.6"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+black = "^23.1.0"
+numpy = "^1.24.1"
+keyboard = "^0.13.5"
+matplotlib = "^3.6.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
